@@ -28,6 +28,7 @@ body {
   font-size: $font-size-body;
   background-color: $color-cream;
   line-height: $line-height-body;
+  overflow: hidden;
 }
 
 main {
@@ -52,6 +53,7 @@ main {
 
 @media screen and (max-width: 375px) {
   body {
+    overflow: hidden;
     font-size: 1.6rem;
   }
 
