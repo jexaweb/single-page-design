@@ -1,0 +1,56 @@
+.btn {
+  padding: 1.8rem 4.5rem;
+  color: $color-cream;
+  border-radius: 2.8rem;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1rem;
+}
+.btn--too {
+  margin-top: 3rem;
+  padding: 1.8rem 4.5rem;
+  width: 22.8rem;
+  height: 5.6rem;
+  color: $color-cream;
+  border-radius: 2.8rem;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1rem;
+}
+.btn--darc {
+  background-color: $color-black;
+
+  &:hover {
+    background-color: $color-purple-light;
+  }
+}
+
+.btn--yellov {
+  background-color: $color-coral;
+  &:hover {
+    background-color: #f6a560;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .btn {
+    padding: 1.2rem 3.5rem 1.2em 3.5rem;
+  }
+
+  .btn--too {
+    padding: 1.2rem 3.5rem 1.2em 3.5rem;
+  }
+}
+
+.btn--arrows {
+  padding: 2.4rem 2.5rem;
+  border-radius: 5rem;
+  text-align: center;
+  gap: 1rem;
+
+  color: $color-cream;
+  background-color: $color-black;
+  &:hover {
+    background-color: $color-purple-light;
+  }
+}

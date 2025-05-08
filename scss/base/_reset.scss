@@ -9,6 +9,7 @@
 html {
   height: 100%;
   scroll-behavior: smooth;
+  font-size: 62.5%;
 }
 
 ul,
@@ -23,6 +24,10 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
+  font-family: $font-body;
+  font-size: $font-size-body;
+  background-color: $color-cream;
+  line-height: $line-height-body;
 }
 
 main {
@@ -36,4 +41,22 @@ main {
   margin-right: auto;
   padding-left: 50px;
   padding-right: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding-right: 3.9rem;
+    padding-left: 3.9rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    font-size: 1.6rem;
+  }
+
+  .container {
+    padding-right: 1.6rem;
+    padding-left: 1.6rem;
+  }
 }

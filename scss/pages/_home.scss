@@ -1,0 +1,373 @@
+.hero {
+}
+.hero-container {
+  margin-bottom: 8rem;
+  text-align: center;
+}
+
+.hero__titl {
+  margin-bottom: 2.3rem;
+  font-size: $font-size-l;
+}
+.hero__description {
+  width: 100%;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero--section {
+}
+
+// color
+.purple {
+  background-color: $color-purple-light;
+}
+.orange {
+  background-color: $color-orange;
+}
+.pink {
+  background-color: $color-pink;
+}
+.teal {
+  background-color: $color-teal;
+}
+.coral {
+  background-color: $color-coral;
+}
+.plum {
+  background-color: $color-purple-dark;
+}
+
+.hero__illustration {
+  gap: 2.4rem;
+  display: grid;
+  grid-template-areas:
+    "a a b1 b2 c c"
+    "a a b  b  d d";
+  margin-bottom: 13.6rem;
+}
+.hero__illustration__item {
+  padding: 2.4rem;
+  border-radius: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 2.5rem;
+}
+
+.hero__illustration__item h3 {
+  margin-right: auto;
+  margin-top: auto;
+  color: $color-cream;
+}
+
+.hero__illustration__item:nth-child(1) {
+  grid-area: a;
+}
+.hero__illustration__item:nth-child(2) {
+  grid-area: b1;
+}
+.hero__illustration__item:nth-child(3) {
+  grid-area: b2;
+}
+.hero__illustration__item:nth-child(4) {
+  grid-area: c;
+}
+.hero__illustration__item:nth-child(5) {
+  grid-area: b;
+}
+.hero__illustration__item:nth-child(6) {
+  grid-area: d;
+}
+@media screen and (max-width: 900px) {
+  .hero__illustration {
+    grid-template-areas:
+      "a a b1 b2 "
+      "a a b  b "
+      "c c d  d";
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-container {
+    margin-bottom: 6.4rem;
+  }
+  .after__img {
+    width: 36.4rem;
+    height: 36.4rem;
+  }
+  .hero__titl {
+    font-weight: 700;
+    font-size: 4.4rem;
+    line-height: 4rem;
+  }
+
+  .after {
+    gap: 6.5rem;
+  }
+  .hero__titl {
+    font-size: 0.8rem;
+    margin-bottom: 2rem;
+  }
+  .after--name {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .after__titl {
+    margin-bottom: 2rem;
+  }
+  .btn {
+    padding: 1.5rem 2rem;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .after {
+    gap: 6.5rem;
+  }
+  .hero__titl {
+    font-size: 1rem;
+    margin-bottom: 2.7rem;
+  }
+  .after--name {
+    font-size: 3.2rem;
+    margin-bottom: 2.4rem;
+  }
+
+  .after__titl {
+    margin-bottom: 2.4rem;
+  }
+
+  .after__img {
+    width: 36.4rem;
+    height: 36.4rem;
+  }
+  .btn {
+    padding: 1.5rem 3rem;
+  }
+  .hero__titl {
+    font-weight: 700;
+    font-size: 4.4rem;
+    line-height: 4rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .hero-container {
+    margin-bottom: 3.2rem;
+  }
+  #after1 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .hero__titl {
+    margin-bottom: 3.6rem;
+  }
+
+  .after__img {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .hero__titl {
+    font-size: 0.8rem;
+    margin-bottom: 2rem;
+  }
+  .after--name {
+    margin: 0;
+    font-size: 2.6rem;
+    margin-bottom: 2.4rem;
+  }
+
+  .after__titl {
+    font-size: 1.6rem;
+    margin-bottom: 2.4rem;
+  }
+}
+
+@media screen and (max-width: 899px) {
+  .after {
+    gap: 6.5rem;
+  }
+  .hero__titl {
+    font-size: 1rem;
+    margin-bottom: 2.7rem;
+  }
+  .after--name {
+    margin-bottom: 2.4rem;
+    margin-top: 10rem;
+    padding-bottom: 3.4rem;
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 4rem;
+    color: $color-black;
+  }
+
+  .after__titl {
+    margin-bottom: 2.4rem;
+  }
+
+  .after__img {
+    margin-top: 12rem;
+    width: 36.4rem;
+    height: 36.4rem;
+  }
+  .hero__titl {
+    font-weight: 700;
+    font-size: 4.4rem;
+    line-height: 4rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .hero-container {
+    margin-bottom: 3.2rem;
+  }
+
+  .hero__titl {
+    margin-bottom: 3.6rem;
+  }
+
+  .hero__illustration {
+    grid-template-areas:
+      "a  a"
+      "a  a "
+      "b1 b2"
+      "b  b "
+      "c  c"
+      "d  d";
+  }
+}
+
+// after
+
+#after1 {
+  display: flex;
+  gap: 12.5rem;
+}
+
+.after--heyt {
+}
+.after--name {
+  margin-top: 10rem;
+  padding-bottom: 3.4rem;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 4.5rem;
+  color: $color-black;
+}
+.after__titl {
+  margin-bottom: 3.2rem;
+  font-weight: 500;
+  font-size: 1.8rem;
+  color: $color-olive;
+}
+.after__link {
+}
+
+// worp
+
+.worp {
+  margin-top: 12rem;
+  margin-bottom: 12rem;
+  text-align: center;
+}
+.worp__name {
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 4rem;
+  color: $color-black;
+  margin-bottom: 5.6rem;
+}
+.wprk__imges {
+  display: flex;
+  overflow: auto;
+  gap: 3rem;
+  padding: 1rem;
+  justify-content: center;
+  padding-bottom: 5.6rem;
+}
+.wprk__imges::-webkit-scrollbar {
+  opacity: 0;
+}
+
+// .profile
+
+.profile {
+  display: flex;
+
+  justify-content: space-between;
+  background-color: $color-black;
+  padding: 12.1rem 9.5rem 12.1rem 6.5rem;
+  margin-bottom: 5.6rem;
+  border-radius: 1rem;
+}
+
+.profile--nayn {
+}
+.porfile--name {
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 4rem;
+  color: $color-cream;
+  padding-bottom: 2.5rem;
+}
+.btn__ayc {
+}
+.profile--aycn {
+  margin-right: auto;
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  color: $color-cream;
+  width: 54rem;
+  height: 8.4rem;
+}
+
+@media screen and (max-width: 1030px) {
+  .profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .porfile--name {
+    font-size: 3.2rem;
+    padding-bottom: 2.6rem;
+  }
+  .profile--aycn {
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // align-items: center;
+    text-align: center;
+  }
+  .porfile--name {
+    font-size: 3.2rem;
+    padding-bottom: 2.6rem;
+  }
+  .profile--aycn {
+  }
+  .btn--too {
+    text-align: center;
+    padding-top: 2rem;
+  }
+  .bga {
+    background-color: $color-black;
+  }
+  .hero__titl {
+    font-weight: 700;
+    font-size: 3.6rem;
+    line-height: 4rem;
+  }
+}
