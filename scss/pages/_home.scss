@@ -324,9 +324,7 @@
   font-size: 1.8rem;
   line-height: 2rem;
   color: $color-cream;
-  padding-bottom: 10rem;
-
-  height: 8.4rem;
+  width: 500px;
 }
 
 @media screen and (max-width: 1030px) {
@@ -359,6 +357,7 @@
   }
   .profile--aycn {
     font-size: 1.6rem;
+    width: auto;
   }
   .btn--too {
     text-align: center;
